@@ -1,0 +1,283 @@
+<html lang="en">
+  <head>
+    <title>Frame CSS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freearhey/frame-css/dist/frame-css.min.css">
+  </head>
+  <body>
+    <header style="display: flex; justify-content: space-between;">
+      <a href="/demo"><b>Frame CSS</b></a>
+      <a href="https://github.com/freearhey/frame-css" target="_blank">GitHub</a>
+    </header>
+    <main>
+      <div style="padding: 0 16px; margin: 0 auto; max-width: 1012px">
+        <article style="border: 1px solid #d1d5da; border-radius: 3px; margin: 10px 0">
+          <h1>Frame CSS</h1>
+          <p>Frame CSS is a classless framework based on <a href="https://primer.style/" target="_blank">Pimer CSS</a>. </p>
+
+          <h2>Content</h2>
+          <ul>
+            <li><a href="#usage">Usage</a></li>
+            <li>
+              <a href="#elements">Elements</a>
+              <ul>
+                <li><a href="#blockquote">Blockquote</a></li>
+                <li><a href="#button">Button</a></li>
+                <li><a href="#code">Code</a></li>
+                <li><a href="#form">Form</a></li>
+                <li><a href="#headings">Headings</a></li>
+                <li><a href="#image">Image</a></li>
+                <li><a href="#list">List</a></li>
+                <li><a href="#table">Table</a></li>
+                <li><a href="#text">Text</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <h2 id="usage">Usage</h2>
+          <p>To use the framework, simply add a link to it in the <code>&lt;head&gt;</code> tag:</p>
+          <p>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+    ...
+    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freearhey/frame-css/dist/frame-css.min.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    ...
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          </p>
+
+          <h2 id="elements">Elements</h2>
+          <h3 id="blockquote">Blockquote</h3>
+          <blockquote>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, voluptatem.
+          </blockquote>
+          <p>
+<pre><code>&lt;blockquote&gt;
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, voluptatem.
+&lt;/blockquote&gt;</code></pre>
+          </p>
+
+          <h3 id="button">Button</h3>
+          <button>Button</button>
+          <p>
+<pre><code>&lt;button&gt;Button&lt;/button&gt;</code></pre>
+          </p>
+
+          <h3 id="code">Code</h3>
+          <pre><code>console.log('Hello World')</code></pre>
+          <p>
+<pre><code>&lt;pre&gt;
+  &lt;code&gt;
+    console.log('Hello World')
+  &lt;/code&gt;
+&lt;/pre&gt;</code></pre>
+          </p>
+          <p>Inline code snippet <code>var foo = "bar";</code></p>
+<pre><code>Inline code snippet &lt;code&gt;var foo = "bar";&lt;/code&gt;</code></pre>
+
+          <h3 id="form">Form</h3>
+          <form>
+            <p>
+              <label for="example-text">Input</label><br>
+              <input type="text" value="Example Value" id="example-text" />
+            </p>         
+            <p>
+              <label for="example-select">Select</label><br>
+              <select id="example-select">
+                <option>Choose an option</option>
+                <option>GitHub</option>
+                <option>GitLab</option>
+                <option>Bitbucket</option>
+              </select>
+            </p>          
+            <p>
+              <label for="example-textarea">Textarea</label><br>
+              <textarea id="example-textarea"></textarea>
+            </p>          
+            <p>
+              <label><input type="checkbox" /> Checkbox</label>
+            </p>
+            <p>
+              <label><input type="radio" id="option1" name="radio" checked /> Option 1</label><br>
+              <label><input type="radio" id="option2" name="radio" /> Option 2</label>
+            </p>
+            <p>
+              <button>Submit</button>
+            </p>
+          </form>
+<pre><code>&lt;form&gt;
+  &lt;p&gt;
+    &lt;label for="example-text"&gt;Input&lt;/label&gt;&lt;br&gt;
+    &lt;input type="text" value="Example Value" id="example-text" /&gt;
+  &lt;/p&gt;         
+  &lt;p&gt;
+    &lt;label for="example-select"&gt;Select&lt;/label&gt;&lt;br&gt;
+    &lt;select id="example-select"&gt;
+      &lt;option&gt;Choose an option&lt;/option&gt;
+      &lt;option&gt;GitHub&lt;/option&gt;
+      &lt;option&gt;GitLab&lt;/option&gt;
+      &lt;option&gt;Bitbucket&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/p&gt;          
+  &lt;p&gt;
+    &lt;label for="example-textarea"&gt;Textarea&lt;/label&gt;&lt;br&gt;
+    &lt;textarea id="example-textarea"&gt;&lt;/textarea&gt;
+  &lt;/p&gt;          
+  &lt;p&gt;
+    &lt;label&gt;&lt;input type="checkbox" /&gt; Checkbox&lt;/label&gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;label&gt;&lt;input type="radio" id="option1" name="radio" checked /&gt; Option 1&lt;/label&gt;&lt;br&gt;
+    &lt;label&gt;&lt;input type="radio" id="option2" name="radio" /&gt; Option 2&lt;/label&gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;button&gt;Submit&lt;/button&gt;
+  &lt;/p&gt;
+&lt;/form&gt;</code></pre>
+        
+          <h3 id="headings">Headigns</h3>
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+<pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
+
+          <h3 id="image">Image</h3>
+          <p>
+            <img src="https://placekitten.com/g/1200/600" alt="kitty">
+          </p>
+<pre><code>&lt;img src="https://placekitten.com/g/1200/600" alt="kitty"&gt;</code></pre>
+
+          <h3 id="list">List</h3>
+          <ul>
+            <li>This is an unordered list</li>
+            <li>This is an unordered list</li>
+            <li>This is an unordered list</li>
+          </ul>
+<pre><code>&lt;ul&gt;
+  &lt;li&gt;This is an unordered list&lt;/li&gt;
+  &lt;li&gt;This is an unordered list&lt;/li&gt;
+  &lt;li&gt;This is an unordered list&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          <ol>
+            <li>This is an ordered list</li>
+            <li>This is an ordered list</li>
+            <li>This is an ordered list</li>
+          </ol>
+<pre><code>&lt;ol&gt;
+  &lt;li&gt;This is an ordered list&lt;/li&gt;
+  &lt;li&gt;This is an ordered list&lt;/li&gt;
+  &lt;li&gt;This is an ordered list&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+          <ul>
+            <li>
+              TMNT
+              <ul>
+                <li>Leonardo</li>
+                <li>Michelangelo</li>
+                <li>Donatello</li>
+                <li>Raphael</li>
+              </ul>
+            </li>
+          </ul>
+<pre><code>&lt;ul&gt;
+  &lt;li&gt;
+    TMNT
+    &lt;ul&gt;
+      &lt;li&gt;Leonardo&lt;/li&gt;
+      &lt;li&gt;Michelangelo&lt;/li&gt;
+      &lt;li&gt;Donatello&lt;/li&gt;
+      &lt;li&gt;Raphael&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          <dl>
+            <dt>Name</dt>
+            <dd>Godzilla</dd>
+            <dt>Born</dt>
+            <dd>1952</dd>
+            <dt>Birthplace</dt>
+            <dd>Japan</dd>
+            <dt>Color</dt>
+            <dd>Green</dd>
+          </dl>
+<pre><code>&lt;dl&gt;
+  &lt;dt&gt;Name&lt;/dt&gt;
+  &lt;dd&gt;Godzilla&lt;/dd&gt;
+  &lt;dt&gt;Born&lt;/dt&gt;
+  &lt;dd&gt;1952&lt;/dd&gt;
+  &lt;dt&gt;Birthplace&lt;/dt&gt;
+  &lt;dd&gt;Japan&lt;/dd&gt;
+  &lt;dt&gt;Color&lt;/dt&gt;
+  &lt;dd&gt;Green&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+
+          <h3 id="table">Table</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Artist</th>
+                <th>Album</th>
+                <th>Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Michael Jackson</td>
+                <td>Thriller</td>
+                <td>1982</td>
+              </tr>
+              <tr>
+                <td>Prince</td>
+                <td>Purple Rain</td>
+                <td>1984</td>
+              </tr>
+            </tbody>
+          </table>
+<pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Artist&lt;/th&gt;
+      &lt;th&gt;Album&lt;/th&gt;
+      &lt;th&gt;Year&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Michael Jackson&lt;/td&gt;
+      &lt;td&gt;Thriller&lt;/td&gt;
+      &lt;td&gt;1982&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Prince&lt;/td&gt;
+      &lt;td&gt;Purple Rain&lt;/td&gt;
+      &lt;td&gt;1984&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+          <h3 id="text">Text</h3>
+          <p>Normal</p>
+          <p><i>Italic</i></p>
+          <p><b>Bold</b></p>
+          <p><em>Emphasized</em></p>
+          <p><small>Small</small></p>
+<pre><code>&lt;p&gt;Normal&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Italic&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Bold&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Emphasized&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;Small&lt;/small&gt;&lt;/p&gt;</code></pre>
+
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

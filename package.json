@@ -1,0 +1,24 @@
+{
+  "name": "frame-css",
+  "version": "1.0.0",
+  "description": "A classless framework based on Primer CSS",
+  "main": "dist/frame-css.min.css",
+  "keywords": [
+    "css",
+    "framework",
+    "classless"
+  ],
+  "author": "Arhey <free.arhey@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.4.2",
+    "cssnano": "^4.1.10",
+    "node-sass": "latest",
+    "onchange": "^5.2.0",
+    "postcss-cli": "^6.1.3"
+  },
+  "scripts": {
+    "build": "node-sass src/main.sass dist/frame-css.min.css && postcss -u autoprefixer cssnano -m dist/frame-css.min.css.map -r dist/frame-css.min.css",
+    "dev": "onchange 'src/**/*.sass' -- npm run build"
+  }
+}
