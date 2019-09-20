@@ -1,6 +1,6 @@
 {
   "name": "frame-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A classless framework based on Primer CSS",
   "main": "dist/frame-css.min.css",
   "keywords": [
