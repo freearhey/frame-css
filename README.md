@@ -10,7 +10,7 @@ To use the framework, simply add a link to it in the `<head>` tag:
 <html>
   <head>
     ...
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/frame-css/dist/frame-css.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freearhey/frame-css/dist/frame-css.min.css">
   </head>
   <body>
     ...
